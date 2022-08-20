@@ -5,5 +5,10 @@ export default function Dinner() {
     const router = useRouter()
     const { dinnerId } = router.query
 
-    return <h1> Dinner {dinnerId} Recipe</h1>
+    return (
+        <>
+            <h1> Dinner {dinnerId} Recipe</h1>
+            <h2> ohhhhhhhhhhh.... </h2>
+        </>
+    )
 }
