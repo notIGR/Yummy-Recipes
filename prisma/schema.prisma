@@ -17,20 +17,22 @@ datasource db {
 }
 
 model Recipe {
-  id           Int    @id @default(autoincrement())
+  id           String  @id @default(cuid())
   title        String
   type         String
-  ingredients  String
+  ingredients  Json
+  image        String?
   instructions String
   Chef         Chef[]
 }
 
 model Chef {
-  id          Int    @id @default(autoincrement())
+  id          String  @id @default(cuid())
   name        String
-  length      Int
-  favorites   Recipe @relation(fields: [favoritesId], references: [id])
-  favoritesId Int
+  length      Int?
+  favorites   Recipe  @relation(fields: [favoritesId], references: [id])
+  favoritesId String
+  image       String?
 }
 
 // Necessary for Next auth
