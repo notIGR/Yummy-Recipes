@@ -23,16 +23,13 @@ model Recipe {
   ingredients  Json
   image        String?
   instructions String
-  Chef         Chef[]
 }
 
 model Chef {
-  id          String  @id @default(cuid())
-  name        String
-  length      Int?
-  favorites   Recipe  @relation(fields: [favoritesId], references: [id])
-  favoritesId String
-  image       String?
+  id     String  @id @default(cuid())
+  name   String
+  length Int?
+  image  String?
 }
 
 // Necessary for Next auth
