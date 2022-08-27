@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query"
-import { Recipe } from "../recipes/[id]";
+import Recipe from "../../components/recipe";
 
 const LunchList = () => {
     const { isLoading, error, data } = useQuery(['allLunch'], () =>

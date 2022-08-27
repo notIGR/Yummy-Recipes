@@ -18,18 +18,21 @@ datasource db {
 
 model Recipe {
   id           String  @id @default(cuid())
+  chef         Chef    @relation(fields: [chefId], references: [id])
+  chefId       String
   title        String
   type         String
   ingredients  Json
   image        String?
-  instructions String
+  instructions String @db.MediumText
 }
 
 model Chef {
-  id     String  @id @default(cuid())
+  id     String   @id @default(cuid())
   name   String
-  length Int?
+  yoe    Int?
   image  String?
+  Recipe Recipe[]
 }
 
 // Necessary for Next auth
