@@ -28,8 +28,11 @@ const Navbar = () => {
             <a href="./dinner" className="text-xl hover:text-rose-800 duration-500">Dinner</a>
           </li>
         </ul>
+        <button className="mx-4 my-6 md:my-0">
+          <a href="./recipeForm" className="text-xl hover:text-rose-800 duration-500">Add Recipe! </a>
+          </button>
         { logInOut }
-        <button><a href="./recipeForm">Add Recipe! </a></button>
+
       </nav>
     )
     }
