@@ -1,5 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import Recipe from "../../components/recipe";
+import RecipeWithLink from "../../components/recipe-with-link"
+
 
 const DinnerList = () => {
     const { isLoading, error, data } = useQuery(['allDinner'], () =>
@@ -27,13 +29,15 @@ console.log(data)
             { 
                 data.map((recipe) => {
                     return (
-                        <Recipe
-                            key={recipe.id}
-                            title={recipe.title}
-                            type={recipe.type}
-                            ingredients={recipe.ingredients}
-                            instructions={recipe.instructions}
-                        />
+                        <RecipeWithLink id={recipe.id} key={recipe.id}>
+                            <Recipe
+                                key={recipe.id}
+                                title={recipe.title}
+                                type={recipe.type}
+                                ingredients={recipe.ingredients}
+                                instructions={recipe.instructions}
+                            />
+                        </RecipeWithLink>
                     )
                 }
                 )

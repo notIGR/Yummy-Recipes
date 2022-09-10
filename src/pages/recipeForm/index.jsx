@@ -1,7 +1,9 @@
 import { useState } from "react"
-
+import { useRouter } from "next/router"
 
 const RecipeForm = () => {
+
+    const router = useRouter() 
 
     const [title, setTitle] = useState("")
     const [mealType, setMealType] = useState("")
@@ -24,7 +26,9 @@ const RecipeForm = () => {
             }
         })
         .then(res => res.json())
-        .then(res => console.log(res))
+        .then(result => {
+            router.push(`/recipes/${result.id}`)
+        })
 
     }
 
