@@ -1,6 +1,6 @@
 const Recipe = ({ title, type, ingredients:{value:ingredients}, instructions }) => {
     return(
-        <section className="flex flex-col bg-blue-500 my-2 text-whit
+        <section className="flex flex-col bg-blue-500 my-2 text-whit p-4
         ">
             <h2> {title} </h2>
             <h2> {type} </h2>

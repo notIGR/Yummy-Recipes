@@ -14,9 +14,9 @@ const recipeForm = () => {
             <label htmlFor="Dinner">Dinner</label>
             <input type="radio" id="Dinner" value="dinner" name="type" /> <br />
             <label htmlFor="ingredients">List Ingredients</label> <br />
-            <input type="text-box" /> <br />
+            <textarea type="text" name="ingredients" id="ingredients" /> <br />
             <label htmlFor="instructions">Add Cooking Instructions</label> <br />
-            <input type="text" /> <br />
+            <textarea type="text" name="instructions" id="instructions" /> <br />
             <button className="rounded bg-fuchsia-500">Submit Recipe!</button>
         </form>
         </>

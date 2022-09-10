@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className="p-5 bg-white shadow md:flex md:items-center md:justify-between">
         <div>
           <span>
-          <h1 className="text-3xl font-bold underline">  <a href="./"> Yummy Recipes </a> </h1> 
+          <h1 className="text-3xl font-bold font-mono">  <a href="./"> Yummy Recipes </a> </h1> 
           </span>
         </div>
 
