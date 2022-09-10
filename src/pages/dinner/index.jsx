@@ -20,11 +20,11 @@ const DinnerList = () => {
         )
     }
 
-
+console.log(data)
     return (
         <>
             <h1> Dinner Recipe List </h1>
-            {
+            { 
                 data.map((recipe) => {
                     return (
                         <Recipe

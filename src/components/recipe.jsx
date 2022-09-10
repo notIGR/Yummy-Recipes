@@ -1,4 +1,4 @@
-const Recipe = ({ title, type, ingredients:{value:ingredients}, instructions }) => {
+const Recipe = ({ title, type, ingredients, instructions }) => {
     return(
         <section className="flex flex-col bg-blue-500 my-2 text-whit p-4
         ">
