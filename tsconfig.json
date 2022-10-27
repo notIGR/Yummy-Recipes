@@ -22,6 +22,6 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js"
-, "src/pages/_app.jsx", "src/pages/dinner/index.jsx", "src/pages/dinner/[dinnerId].jsx", "src/pages/lunch/index.jsx", "src/pages/lunch/[lunchId].jsx", "src/pages/breakfast/index.jsx", "src/pages/breakfast/[breakfastId].jsx"  ],
+, "src/pages/_app.tsx", "src/pages/dinner/index.tsx", "src/pages/dinner/[dinnerId].jsx", "src/pages/lunch/index.tsx", "src/pages/lunch/[lunchId].jsx", "src/pages/breakfast/index.tsx", "src/pages/breakfast/[breakfastId].jsx"  ],
   "exclude": ["node_modules"]
 }

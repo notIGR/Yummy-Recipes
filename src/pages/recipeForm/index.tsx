@@ -10,7 +10,7 @@ const RecipeForm = () => {
     const [ingredients,setIngredients] = useState([])
     const [instructions,setInstructions] = useState("")
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: unknown) => {
         e.preventDefault()
         const data = {
             title:title,
@@ -33,20 +33,20 @@ const RecipeForm = () => {
     }
 
 
-    const handleChangeMealType = (e) => {
+    const handleChangeMealType = (e: unknown) => {
         setMealType(e.target.value)
     }
     
-    const handleChangeTitle = (e) => {
+    const handleChangeTitle = (e: unknown) => {
         setTitle(e.target.value)
     }
 
-    const handleChangeInstructions = (e) => {
+    const handleChangeInstructions = (e: unknown) => {
         setInstructions(e.target.value) 
     }
 
 
-    const handleChangeIngredients = (e) => { 
+    const handleChangeIngredients = (e: unknown) => { 
         setIngredients(e.target.value.split(",").map((ingredient) => {
             return ingredient.trim()
         }))

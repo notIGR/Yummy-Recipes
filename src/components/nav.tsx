@@ -1,9 +1,10 @@
 import { useSession } from "next-auth/react";
 import Link from "next/link"
 
+
 const Navbar = () => {
     const { data: session, status } = useSession()
-    let logInOut = "";
+    let logInOut: any = "";
   
     if (status === "authenticated") {
       logInOut = <section>Signed in as {session.user.email} </section>
